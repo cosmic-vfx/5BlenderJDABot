@@ -10,6 +10,6 @@ Heroku Setup:
   
   Then create a github repo[google it to figure it out and make sure its private], then setup heroku account that links to the github, then upload all files from the repo to the github and then upload a new file from: `Project Dir` > `out` > `artifacts` > `NewTestBot_jar` > `NewTestBot.jar`, once uploaded make sure to go back to heroku and click the Deploy button.
   
-  MAKE SURE THE JAR IS PLACED IN THE SAME FOLDER DIRECTORY AS THE PROCFILE
+  <b>MAKE SURE THE JAR IS PLACED IN THE SAME FOLDER DIRECTORY AS THE PROCFILE</b>
   
   Need more help? Dm me on discord @cosmicvfx#5436
