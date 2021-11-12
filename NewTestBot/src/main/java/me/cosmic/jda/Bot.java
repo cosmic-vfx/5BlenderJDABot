@@ -32,10 +32,12 @@ public class Bot extends ListenerAdapter {
         if (event.getAuthor().isBot()) {
             if (event.getMessage().isWebhookMessage()) {
                 if (event.getChannel().getId().equals("900470016552624168" /* -- Needs to be changed to #drive-additions channel ID -- */)) {
-                    event.getChannel().sendMessage("<@&906694263851585588>" /* -- Needs to be changed to the Upload Alerts role ID -- */).queue();
+                    event.getChannel().sendMessage("<@&906686308330643486>" /* -- Needs to be changed to the Upload Alerts role ID -- */).queue();
                 } else {
-                    if (event.getChannel().getId().equals("906692533751513131" /* -- Needs to be changed to #aes-keys channel ID -- */)) {
-                        event.getChannel().sendMessage("<@&906694263851585588>" /* -- Needs to be changed to AES Alert role ID -- */).queue();
+                    if (!(event.getMessage().getEmbeds().isEmpty())) {
+                        if (event.getChannel().getId().equals("906692533751513131" /* -- Needs to be changed to #aes-keys channel ID -- */)) {
+                            event.getChannel().sendMessage("<@&906694263851585588>" /* -- Needs to be changed to AES Alert role ID -- */).queue();
+                        }
                     }
                 }
             } else {
